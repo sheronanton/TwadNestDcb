@@ -82,6 +82,8 @@ public class DCB_Receipt_Edition extends HttpServlet {
        //     ConnectionString =
        //             strdsn.trim() + "@" + strhostname.trim() + ":" + strportno.trim() +
         //            ":" + strsid.trim();
+            
+            //Sheron 06-05-2026
             ConnectionString = strdsn.trim() + "://" + strhostname.trim() + ":" + strportno.trim() + "/" +strsid.trim() ;    // Postgres DB  Connection 
             Class.forName(strDriver.trim());
             con =
